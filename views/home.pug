@@ -1,0 +1,49 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style
+    style
+        include ../static/style.css
+
+block content
+    section#intro
+        img(src="/static/bsslogo.png")
+        h1 Welcome to Beacon Academy!
+        h2 We are the pioneers of education in Pakistan. Lead with Passion! 
+    section#services
+        h1 Educational Programs.
+        //- div.container
+        div.card.c1
+            p Montessori Education
+            img(src="/static/montessori.jpg")
+            | For children from the age of 4-7.
+            br
+            | Certified by Stephen Covey Education. 
+        div.card.c2
+            p Middle School Education  
+            img(src="/static/images.jpg")
+            | For children from the age of 8-14.
+            br
+            | Certified from Institue of Education.
+        div.card.c3
+            p High School Education
+            img(src="/static/olevel.jpg")
+            | For children from the age of 14-17.
+            br
+            | Certified from British Council UK.
+        div.button.ss Got a question regarding program? Click here to contact us.
+    
+    section#sponsorssec
+        h1 Our Proud Sponsors.
+        div#sponsorslogo
+        img(src="/static/TS logo.png" class="spimg")
+        img(src="/static/storm.png" class="spimg")
+        img(src="/static/ikea.png" class="spimg")
+        img(src="/static/dell.png" class="spimg")
+        div#sponsorsdesc
+            | TS Construction Solutions &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            | Stormfiber Internet Solutions &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            | IKEA Premium Furnitures &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            | DELL Computers and Electronic
