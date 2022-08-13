@@ -4,7 +4,7 @@ const path= require("path");
 const app=express();
 var mongoose= require('mongoose');
 mongoose.connect('mongodb://localhost/BeaconAcademy',{useNewUrlParser:true});
-const port = process.env.PORT || 8000;
+ const port = process.env.PORT || 8000;
 const bodyparser=require('body-parser')
 // define mongoose schema
 
@@ -39,6 +39,6 @@ app.post('/contact', (req,res)=>{
     // res.redirect('
     // res.status(200).render('contact.pug');
 })
-app.listen(port,()=>{
+app.listen(process.env.PORT || 8000,()=>{
     console.log(`app started successfully on port ${port}`);
 })
