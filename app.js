@@ -4,7 +4,7 @@ const path= require("path");
 const app=express();
 var mongoose= require('mongoose');
 mongoose.connect('mongodb://localhost/BeaconAcademy',{useNewUrlParser:true});
-//const port = 80;
+const port = process.env.PORT || 8000;
 const bodyparser=require('body-parser')
 // define mongoose schema
 
